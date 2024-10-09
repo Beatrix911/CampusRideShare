@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - CampusRideShare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="CampusRideShare Logo">
+                <h2>CampusRideShare</h2>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-bicycle"></i> Track Vehicles</a></li>
+                    <li><a href="#"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <div class="user-info">
+                    <img src="admin-avatar.jpg" alt="Admin Avatar" class="avatar">
+                    <span>Welcome, Admin</span>
+                </div>
+            </header>
+
+            <section class="dashboard">
+                <div class="admin-grid">
+                    <!-- Tracking Section -->
+                    <div class="admin-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Track Vehicles</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Vehicle</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Last Updated</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bicycle 01</td>
+                                    <td>Campus Main Gate</td>
+                                    <td><span class="status available">Available</span></td>
+                                    <td>2024-09-10 10:45 AM</td>
+                                    <td><button class="btn btn-primary">Track Now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Electric Scooter 02</td>
+                                    <td>Library</td>
+                                    <td><span class="status in-use">In Use</span></td>
+                                    <td>2024-09-10 11:00 AM</td>
+                                    <td><button class="btn btn-primary">Track Now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pricing Section -->
+                    <div class="admin-section">
+                        <h3><i class="fas fa-tags"></i> Pricing Management</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Vehicle Type</th>
+                                    <th>Base Price (PHP)</th>
+                                    <th>Price per 250m (PHP)</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bicycle</td>
+                                    <td>15</td>
+                                    <td>5</td>
+                                    <td><button class="btn btn-secondary">Edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Electric Bicycle</td>
+                                    <td>30</td>
+                                    <td>10</td>
+                                    <td><button class="btn btn-secondary">Edit</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Logged-in Users Section -->
+                    <div class="admin-section">
+                        <h3><i class="fas fa-user-check"></i> Logged-in Users</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Login Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1001</td>
+                                    <td>John Doe</td>
+                                    <td>john.doe@example.com</td>
+                                    <td>2024-09-10 09:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>Jane Smith</td>
+                                    <td>jane.smith@example.com</td>
+                                    <td>2024-09-10 09:45 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
